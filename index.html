@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #607;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: light blue;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 30px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 35px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #ade6d8;
+  height: 310px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #647;
+  padding: 7px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>The Tsar Bomb</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://ahf.nuclearmuseum.org/ahf/history/tsar-bomba/">Tsar Bomba</a></li>
+      
+      <li><a href="#"></a></li>
+      
+      <li><a href="https://www.britannica.com/topic/Tsar-Bomba">More about the Tsar Bomb</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>world's strongest bomb</h1>
+    <p>The Tsar Bomba  also known by the alphanumerical designation "AN602", was a thermonuclear aerial bomb, and the most powerful nuclear weapon ever created and tested.</p>
+    <p>The Tsar Bomba packed a punch of over 50 megatons, which is the equivalent of 50 million tons of conventional explosives. That's 10 times more powerful than all the munitions expended during World War Two and over 1,500 times the force of the atomic bombs dropped on Hiroshima and Nagasaki combined.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
